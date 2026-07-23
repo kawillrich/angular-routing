@@ -25,13 +25,19 @@
 
   </head>
   <body ng-controller="myAppCtrl">
-    <nav id="navbar">
-        <div id="sidebar"></div>
-        <div id="menu"></div>
-        <input type="search" name="global-search" id="global-search">
-        <div id="create"></div>
-        <div id="settings"></div>
-        <div id="profile"></div>
+    <nav id="navbar" class="navbar navbar-default">
+        <div id="sidebar"><i class="fa-duotone fa-solid fa-sidebar"></i></div>
+        <div id="menu"><i class="fa-duotone fa-solid fa-bars"></i></div>
+<div class="input-group input-group-lg">
+  <span class="input-group-addon" id="sizing-addon1">@</span>
+  <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
+</div>
+        <div id="create">
+          <button class="btn btn-primary" type="submit"><i class="fa-duotone fa-solid fa-plus" style="--fa-secondary-color: rgb(255, 255, 255); --fa-secondary-opacity: 1;"></i><span class="text-buttons">Create</span></button>
+
+        </div>
+        <div id="settings"><i class="fa-duotone fa-solid fa-gear"></i></div>
+        <div id="profile"><i class="fa-duotone fa-solid fa-circle-user"></i></div>
     </nav>
     <script src="app.js"></script>
   </body>

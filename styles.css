@@ -1,4 +1,18 @@
-h1 {
+:root {
+  --text-buttons: hsla(218, 45%, 22%, 0.40)
+}
+
+body {
   font-family: sans-serif;
 }
 
+span.text-buttons {
+    color: white;
+
+  }
+
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+}
