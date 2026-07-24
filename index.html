@@ -1,44 +1,55 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="myApp">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>HTML + CSS</title>
-    
-    <link rel="stylesheet" href="styles.css" />
 
-    <!-- Bootstrap 3.3.7 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>HTML + CSS</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css" />
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- AngularJS 1.5 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular-route.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
 
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/0be6100f9e.js" crossorigin="anonymous"></script>
+  <!-- AngularJS 1.5 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.min.js"></script>
 
-  </head>
-  <body ng-controller="myAppCtrl">
-    <nav id="navbar" class="navbar navbar-default">
-        <div id="sidebar"><i class="fa-duotone fa-solid fa-sidebar"></i></div>
-        <div id="menu"><i class="fa-duotone fa-solid fa-bars"></i></div>
-<div class="input-group input-group-lg">
-  <span class="input-group-addon" id="sizing-addon1">@</span>
-  <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
-</div>
-        <div id="create">
-          <button class="btn btn-primary" type="submit"><i class="fa-duotone fa-solid fa-plus" style="--fa-secondary-color: rgb(255, 255, 255); --fa-secondary-opacity: 1;"></i><span class="text-buttons">Create</span></button>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular-route.min.js"></script>
 
-        </div>
-        <div id="settings"><i class="fa-duotone fa-solid fa-gear"></i></div>
-        <div id="profile"><i class="fa-duotone fa-solid fa-circle-user"></i></div>
-    </nav>
-    <script src="app.js"></script>
-  </body>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/0be6100f9e.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body ng-controller="myAppCtrl">
+  <nav id="navbar" class="navbar navbar-default">
+    <div id="sidebar"><i class="fa-duotone fa-solid fa-sidebar"></i></div>
+    <div id="menu"><i class="fa-duotone fa-solid fa-bars"></i></div>
+    <div id="menu-input-group" class="input-group input-group-lg">
+      <span class="input-group-addon" id="sizing-addon1">@</span>
+      <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
+    </div>
+    <div id="create">
+      <button id="main-search-btn" class="navbar-btn btn btn-primary" type="submit">
+        <i class="fa-duotone fa-solid fa-plus"
+          style="--fa-secondary-color: rgb(255, 255, 255); --fa-secondary-opacity: 1;">
+        </i>
+        <span class="text-buttons">Create</span>
+      </button>
+    </div>
+    <div id="settings"><i class="fa-duotone fa-solid fa-gear"></i></div>
+    <div id="profile"><i class="fa-duotone fa-solid fa-circle-user"></i></div>
+  </nav>
+  <script src="app.js"></script>
+</body>
+
 </html>
